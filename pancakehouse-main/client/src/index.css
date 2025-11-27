@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Public Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+:root {
+  --background: hsl(50, 100%, 97%);
+  --foreground: hsl(0, 0%, 10%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 10%);
+  --border: hsl(0, 0%, 0%);
+  --ph-red: #FF2A2A;
+  --ph-cream: #FFFDF0;
+  --ph-yellow: #FFD600;
+  --ph-teal: #2DD4BF;
+  --ph-black: #1a1a1a;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF0;
+  border-left: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF2A2A;
+  border: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD600;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 2px black;
+}
+
+.stroke-text-yellow {
+  -webkit-text-stroke: 2px black;
+  color: #FFD600;
+}

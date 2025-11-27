@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pancakehouse-westhamilton.vercel.app/sitemap.xml
