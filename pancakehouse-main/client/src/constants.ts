@@ -30,7 +30,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "2 eggs, 2 bacon, 2 sausages, homefries, and toast. A crash-course survival kit with caffeine optional and carbs mandatory.",
     price: '$13.95',
     badge: 'LIMITED TIME',
-    image: 'https://picsum.photos/400/300?random=4'
+    image: '/assets/exam-week-special.jpg'
   }
 ];
 
