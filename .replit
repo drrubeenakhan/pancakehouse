@@ -22,13 +22,13 @@ args = "Start application"
 name = "Start application"
 author = "agent"
 
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd pancakehouse-main && npm run dev:ssr"
-waitForPort = 5000
-
 [workflows.workflow.metadata]
 outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev:ssr"
+waitForPort = 5000
 
 [[ports]]
 localPort = 5000
@@ -41,6 +41,10 @@ externalPort = 3000
 [[ports]]
 localPort = 36737
 externalPort = 3001
+
+[[ports]]
+localPort = 43709
+externalPort = 3002
 
 [deployment]
 deploymentTarget = "autoscale"
