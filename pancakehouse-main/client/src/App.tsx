@@ -220,49 +220,25 @@ const App: React.FC = () => {
                   <svg viewBox="0 0 400 400" className="w-full h-full">
                     <rect width="400" height="400" fill="#FFFDF0" />
                     
-                    <rect x="0" y="340" width="400" height="35" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
-                    <text x="200" y="362" fill="#666" fontWeight="bold" fontSize="12" textAnchor="middle">HWY 8</text>
+                    <rect x="0" y="180" width="400" height="40" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="60" y="205" fill="#666" fontWeight="bold" fontSize="12">MAIN ST W</text>
                     
-                    <rect x="30" y="0" width="25" height="340" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
-                    <text x="42" y="200" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 42, 200)">COOTES DR</text>
+                    <rect x="120" y="0" width="25" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="132" y="320" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 132, 320)">NORFOLK ST N</text>
                     
-                    <rect x="120" y="100" width="20" height="275" fill="#d4d4d4" stroke="#1a1a1a" strokeWidth="1" />
-                    <text x="130" y="250" fill="#888" fontWeight="bold" fontSize="9" textAnchor="middle" transform="rotate(-90, 130, 250)">NORFOLK ST N</text>
+                    <rect x="300" y="0" width="25" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="312" y="100" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 312, 100)">COOTES DR</text>
                     
-                    <path d="M55 80 Q 150 60, 280 30" fill="none" stroke="#d4d4d4" strokeWidth="18" />
-                    <path d="M55 80 Q 150 60, 280 30" fill="none" stroke="#1a1a1a" strokeWidth="1" />
-                    <text x="170" y="55" fill="#888" fontSize="8">SCHOLARS RD</text>
-                    
-                    <rect x="55" y="180" width="300" height="20" fill="#d4d4d4" stroke="#1a1a1a" strokeWidth="1" />
-                    <text x="200" y="194" fill="#888" fontSize="9" textAnchor="middle">COLLEGE CRES</text>
-                    
-                    <rect x="280" y="200" width="15" height="175" fill="#d4d4d4" stroke="#1a1a1a" strokeWidth="1" />
-                    <text x="287" y="290" fill="#888" fontSize="8" textAnchor="middle" transform="rotate(-90, 287, 290)">UNIVERSITY AVE</text>
-                    
-                    <rect x="200" y="40" width="180" height="130" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
-                    <text x="290" y="90" fill="#1e40af" fontWeight="bold" fontSize="14" textAnchor="middle">MCMASTER</text>
-                    <text x="290" y="110" fill="#1e40af" fontWeight="bold" fontSize="14" textAnchor="middle">UNIVERSITY</text>
-                    
-                    <rect x="160" y="220" width="100" height="60" fill="#f0fdf4" stroke="#1a1a1a" strokeWidth="1" rx="2" />
-                    <text x="210" y="250" fill="#166534" fontSize="8" textAnchor="middle">INSTITUTE FOR</text>
-                    <text x="210" y="262" fill="#166534" fontSize="8" textAnchor="middle">HEALTH SCIENCES</text>
-                    
-                    <rect x="160" y="290" width="80" height="40" fill="#f0fdf4" stroke="#1a1a1a" strokeWidth="1" rx="2" />
-                    <text x="200" y="312" fill="#166534" fontSize="8" textAnchor="middle">INFO TECH</text>
-                    
-                    <circle cx="80" y="375" r="10" fill="#ef4444" stroke="#1a1a1a" strokeWidth="2" cy="375" />
-                    <text x="80" y="379" fill="white" fontWeight="bold" fontSize="8" textAnchor="middle">E</text>
-                    
-                    <rect x="320" y="355" width="70" height="25" fill="#fce7f3" stroke="#1a1a1a" strokeWidth="1" rx="2" />
-                    <text x="355" y="372" fill="#9d174d" fontSize="8" textAnchor="middle">SHOPPERS</text>
+                    <rect x="330" y="30" width="60" height="120" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
+                    <text x="360" y="85" fill="#1e40af" fontWeight="bold" fontSize="11" textAnchor="middle">MCMASTER</text>
+                    <text x="360" y="100" fill="#1e40af" fontWeight="bold" fontSize="11" textAnchor="middle">UNIVERSITY</text>
                     
                     <g className="animate-bounce">
-                      <path d="M70 290 L70 310 L55 340 L85 340 L70 310" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
-                      <circle cx="70" cy="278" r="20" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
+                      <path d="M200 150 L200 170 L185 180 L215 180 L200 170" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
+                      <circle cx="200" cy="138" r="22" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
                     </g>
-                    <text x="70" y="284" fill="white" fontWeight="bold" fontSize="12" textAnchor="middle">PH</text>
-                    <text x="95" y="270" fill="#1a1a1a" fontWeight="bold" fontSize="9">MAPLE LEAF</text>
-                    <text x="95" y="282" fill="#1a1a1a" fontWeight="bold" fontSize="9">PANCAKE HOUSE</text>
+                    <text x="200" y="145" fill="white" fontWeight="bold" fontSize="14" textAnchor="middle">PH</text>
+                    <text x="200" y="250" fill="#1a1a1a" fontWeight="bold" fontSize="11" textAnchor="middle">PANCAKE HOUSE</text>
                   </svg>
                </div>
             </div>
