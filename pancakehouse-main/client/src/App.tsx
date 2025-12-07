@@ -78,18 +78,14 @@ const App: React.FC = () => {
               </span>
             </div>
             <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
-               <picture>
-                 <source srcSet="/hero.webp" type="image/webp" />
-                 <img 
-                   src="/hero.jpg" 
-                   alt="Maple Leaf Pancake House storefront" 
-                   className="w-full h-auto border-2 border-black object-cover"
-                   width="800"
-                   height="533"
-                   loading="eager"
-                   style={{ imageRendering: 'crisp-edges' }}
-                 />
-               </picture>
+               <img 
+                 src="https://picsum.photos/600/600?random=hero" 
+                 alt="Giant stack of pancakes" 
+                 className="w-full h-auto border-2 border-black object-cover"
+                 width="600"
+                 height="600"
+                 loading="eager"
+               />
             </div>
           </div>
         </div>
