@@ -92,17 +92,14 @@ const App: React.FC = () => {
         </div>
       </Section>
 
-      {special && (
-        <div className="bg-black text-ph-yellow border-b-4 border-white py-4 overflow-hidden relative">
-          <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-            <span className="font-display text-3xl bg-ph-red text-white px-3 rotate-2 border-2 border-white">TODAY'S AI SPECIAL</span>
-            <div>
-              <span className="font-display text-2xl uppercase mr-2">{special.name}:</span>
-              <span className="font-body font-bold">{special.description}</span>
-            </div>
+      <div className="bg-black text-ph-yellow border-b-4 border-white py-4 overflow-hidden relative">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
+          <span className="font-display text-3xl bg-ph-red text-white px-3 rotate-2 border-2 border-white">AWARD WINNING WAFFLE SPECIAL</span>
+          <div>
+            <span className="font-body font-bold">Only $16.95: Comes with 2 Strips of Bacon, 2 Sausages, and 1 Egg.</span>
           </div>
         </div>
-      )}
+      </div>
 
       <section ref={menuRef}>
         <Section className="bg-ph-cream" pattern="zigzags">
