@@ -70,14 +70,14 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="flex-1 relative w-full max-w-md md:max-w-full">
-            <div className="absolute top-0 right-0 w-32 h-32 text-ph-teal animate-pulse z-20">
+          <div className="flex-1 relative w-full max-w-md md:max-w-full overflow-visible">
+            <div className="absolute -top-8 -right-8 w-32 h-32 text-ph-teal animate-pulse z-20">
               <StarburstSVG className="w-full h-full drop-shadow-[4px_4px_0_rgba(0,0,0,1)]" />
               <span className="absolute inset-0 flex items-center justify-center font-display text-ph-black text-xl rotate-12 text-center leading-none">
                 OPEN<br/>DAILY!
               </span>
             </div>
-            <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl">
+            <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
                <img 
                  src="https://picsum.photos/600/600?random=hero" 
                  alt="Giant stack of pancakes" 

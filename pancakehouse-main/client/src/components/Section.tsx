@@ -24,9 +24,9 @@ const Section: React.FC<SectionProps> = ({ id, className = '', children, pattern
   }
 
   return (
-    <section id={id} className={`relative w-full overflow-hidden border-b-4 border-black ${className}`}>
+    <section id={id} className={`relative w-full border-b-4 border-black ${className}`}>
       {pattern !== 'none' && (
-        <div className="absolute inset-0 pointer-events-none" style={patternStyle}></div>
+        <div className="absolute inset-0 pointer-events-none overflow-hidden" style={patternStyle}></div>
       )}
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-12 md:py-24">
         {children}
