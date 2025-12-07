@@ -217,18 +217,49 @@ const App: React.FC = () => {
 
             <div className="flex-1 w-full relative">
                <div className="aspect-square bg-ph-cream border-4 border-black relative overflow-hidden shadow-hard-xl">
-                  <div className="absolute top-1/2 left-0 right-0 h-8 bg-gray-300 border-y-2 border-black transform -translate-y-1/2 rotate-12"></div>
-                  <div className="absolute top-0 bottom-0 left-1/3 w-6 bg-gray-300 border-x-2 border-black"></div>
-                  
-                  <div className="absolute top-10 left-4 bg-gray-200 border-2 border-black px-2 text-xs font-bold text-gray-500">MCMASTER UNI</div>
-                  
-                  <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-ph-red border-4 border-black transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center animate-bounce">
-                    <span className="font-display text-white text-3xl">PH</span>
-                  </div>
-                  
-                  <svg className="absolute bottom-10 right-10 w-24 h-24 text-ph-black transform -rotate-12" viewBox="0 0 100 100">
-                    <path d="M10 90 Q 50 90, 80 50 L 70 55 M 80 50 L 75 65" fill="none" stroke="currentColor" strokeWidth="4" />
-                    <text x="20" y="90" className="font-display text-xl">YOU ARE HERE</text>
+                  <svg viewBox="0 0 400 400" className="w-full h-full">
+                    <rect width="400" height="400" fill="#FFFDF0" />
+                    
+                    <rect x="0" y="170" width="400" height="45" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="20" y="197" fill="#666" fontWeight="bold" fontSize="12">MAIN ST W</text>
+                    <text x="320" y="197" fill="#666" fontWeight="bold" fontSize="12">HWY 8</text>
+                    
+                    <rect x="220" y="0" width="30" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="228" y="50" fill="#666" fontWeight="bold" fontSize="10" transform="rotate(90, 228, 50)">COOTES DR</text>
+                    
+                    <rect x="80" y="0" width="20" height="170" fill="#d4d4d4" stroke="#1a1a1a" strokeWidth="1" />
+                    <text x="60" y="80" fill="#888" fontSize="8">SANDERS</text>
+                    
+                    <rect x="320" y="215" width="15" height="185" fill="#d4d4d4" stroke="#1a1a1a" strokeWidth="1" />
+                    <text x="310" y="300" fill="#888" fontSize="8" transform="rotate(90, 310, 300)">EMERSON</text>
+                    
+                    <rect x="280" y="30" width="100" height="80" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
+                    <text x="295" y="65" fill="#1e40af" fontWeight="bold" fontSize="11">MCMASTER</text>
+                    <text x="295" y="80" fill="#1e40af" fontWeight="bold" fontSize="11">UNIVERSITY</text>
+                    
+                    <rect x="30" y="250" width="60" height="40" fill="#fef3c7" stroke="#1a1a1a" strokeWidth="1" rx="2" />
+                    <text x="38" y="275" fill="#92400e" fontSize="9">TAHINI'S</text>
+                    
+                    <rect x="320" y="250" width="60" height="35" fill="#fce7f3" stroke="#1a1a1a" strokeWidth="1" rx="2" />
+                    <text x="325" y="270" fill="#9d174d" fontSize="8">SHOPPERS</text>
+                    
+                    <circle cx="160" cy="235" r="12" fill="#ef4444" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="155" y="240" fill="white" fontWeight="bold" fontSize="10">E</text>
+                    <text x="130" y="265" fill="#666" fontSize="9">ESSO</text>
+                    
+                    <g className="animate-bounce">
+                      <path d="M235 140 L235 155 L220 175 L250 175 L235 155" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
+                      <circle cx="235" cy="130" r="18" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
+                      <text x="225" y="136" fill="white" fontWeight="bold" fontSize="14">PH</text>
+                    </g>
+                    <text x="255" y="145" fill="#1a1a1a" fontWeight="bold" fontSize="10">PANCAKE</text>
+                    <text x="255" y="158" fill="#1a1a1a" fontWeight="bold" fontSize="10">HOUSE</text>
+                    
+                    <g transform="translate(60, 320)">
+                      <path d="M0 30 Q 30 20, 50 0" fill="none" stroke="#1a1a1a" strokeWidth="3" />
+                      <path d="M45 5 L50 0 L55 8" fill="none" stroke="#1a1a1a" strokeWidth="3" />
+                      <text x="0" y="50" fill="#1a1a1a" fontWeight="bold" fontSize="14" fontFamily="Bangers, cursive">YOU ARE HERE</text>
+                    </g>
                   </svg>
                </div>
             </div>
