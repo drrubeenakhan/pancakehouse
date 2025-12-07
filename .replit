@@ -1,7 +1,7 @@
 modules = ["nodejs-20"]
 [nix]
 channel = "stable-25_05"
-packages = ["unzip"]
+packages = ["unzip", "libwebp"]
 
 [agent]
 expertMode = true
@@ -37,10 +37,6 @@ externalPort = 80
 [[ports]]
 localPort = 24678
 externalPort = 3000
-
-[[ports]]
-localPort = 33637
-externalPort = 3001
 
 [[ports]]
 localPort = 37615

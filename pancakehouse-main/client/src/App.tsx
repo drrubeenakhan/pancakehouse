@@ -79,12 +79,15 @@ const App: React.FC = () => {
             </div>
             <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
                <div className="aspect-[3/4] w-full overflow-hidden border-2 border-black">
-                 <img 
-                   src="/hero.jpg" 
-                   alt="Giant stack of pancakes" 
-                   className="w-full h-full object-cover"
-                   loading="eager"
-                 />
+                 <picture>
+                   <source srcSet="/hero.webp" type="image/webp" />
+                   <img 
+                     src="/hero.jpg" 
+                     alt="Pancake House storefront" 
+                     className="w-full h-full object-cover"
+                     loading="eager"
+                   />
+                 </picture>
                </div>
             </div>
           </div>
