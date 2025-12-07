@@ -48,7 +48,7 @@ const App: React.FC = () => {
         Maple Leaf Pancake House · West Hamilton · Since 1999
       </div>
 
-      <Section className="bg-ph-red text-white" pattern="dots">
+      <Section className="bg-ph-red text-white overflow-hidden" pattern="dots">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left z-10">
             <div className="inline-block bg-black text-ph-yellow font-bold px-4 py-1 -rotate-2 mb-6 shadow-hard-sm text-sm">
@@ -69,7 +69,7 @@ const App: React.FC = () => {
           </div>
           
           <div className="flex-1 relative w-full max-w-md md:max-w-full overflow-visible">
-            <div className="absolute -top-8 -right-8 w-32 h-32 text-ph-teal animate-pulse z-20">
+            <div className="absolute -top-8 -right-2 md:-right-8 w-28 md:w-32 h-28 md:h-32 text-ph-teal animate-pulse z-20">
               <StarburstSVG className="w-full h-full drop-shadow-[4px_4px_0_rgba(0,0,0,1)]" />
               <span className="absolute inset-0 flex items-center justify-center font-display text-ph-black text-xl rotate-12 text-center leading-none">
                 OPEN<br/>DAILY!
