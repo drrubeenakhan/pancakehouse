@@ -49,39 +49,39 @@ const App: React.FC = () => {
       </div>
 
       <Section className="bg-ph-red text-white" pattern="dots">
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-          <div className="flex-1 text-center md:text-left z-10 order-2 md:order-1">
-            <div className="inline-block bg-black text-ph-yellow font-bold px-3 py-1 -rotate-2 mb-4 md:mb-6 shadow-hard-sm text-xs md:text-sm">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex-1 text-center md:text-left z-10">
+            <div className="inline-block bg-black text-ph-yellow font-bold px-4 py-1 -rotate-2 mb-6 shadow-hard-sm text-sm">
               SERVING MCMASTER & WESTDALE
             </div>
-            <h1 className="font-display text-5xl md:text-8xl lg:text-9xl leading-[0.85] mb-4 md:mb-6 drop-shadow-[3px_3px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
+            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.8] mb-6 drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
               MAPLE LEAF<br />
               <span className="text-ph-yellow stroke-text">PANCAKE HOUSE</span>
             </h1>
-            <p className="font-bold text-base md:text-2xl mb-6 md:mb-8 max-w-lg leading-tight mx-auto md:mx-0">
+            <p className="font-bold text-lg md:text-2xl mb-8 max-w-lg leading-tight">
               The 30-year-old breakfast institution that tastes like cartoons and maple syrup.
             </p>
-            <div className="flex flex-row gap-3 md:gap-4 justify-center md:justify-start">
+            <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
               <BrutalButton onClick={scrollToMenu} variant="primary">See The Menu</BrutalButton>
               <BrutalButton onClick={scrollToMap} variant="secondary">Get Directions</BrutalButton>
             </div>
           </div>
           
-          <div className="flex-1 relative w-full max-w-xs md:max-w-full overflow-visible order-1 md:order-2">
-            <div className="absolute -top-4 -right-4 md:-top-8 md:-right-8 w-20 h-20 md:w-32 md:h-32 text-ph-teal animate-pulse z-20">
-              <StarburstSVG className="w-full h-full drop-shadow-[2px_2px_0_rgba(0,0,0,1)] md:drop-shadow-[4px_4px_0_rgba(0,0,0,1)]" />
-              <span className="absolute inset-0 flex items-center justify-center font-display text-ph-black text-sm md:text-xl rotate-12 text-center leading-none">
+          <div className="flex-1 relative w-full max-w-md md:max-w-full overflow-visible">
+            <div className="absolute -top-8 -right-8 w-32 h-32 text-ph-teal animate-pulse z-20">
+              <StarburstSVG className="w-full h-full drop-shadow-[4px_4px_0_rgba(0,0,0,1)]" />
+              <span className="absolute inset-0 flex items-center justify-center font-display text-ph-black text-xl rotate-12 text-center leading-none">
                 OPEN<br/>DAILY!
               </span>
             </div>
-            <div className="relative border-3 md:border-4 border-black bg-white p-1.5 md:p-2 rotate-2 md:rotate-3 shadow-hard-xl overflow-visible">
-               <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden border-2 border-black">
+            <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
+               <div className="aspect-[3/4] w-full overflow-hidden border-2 border-black">
                  <picture>
                    <source srcSet="/hero.webp" type="image/webp" />
                    <img 
                      src="/hero.jpg" 
                      alt="Pancake House storefront" 
-                     className="w-full h-full object-cover object-top"
+                     className="w-full h-full object-cover"
                      loading="eager"
                    />
                  </picture>
