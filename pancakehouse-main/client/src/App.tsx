@@ -78,14 +78,14 @@ const App: React.FC = () => {
               </span>
             </div>
             <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
-               <img 
-                 src="/hero.jpg" 
-                 alt="Giant stack of pancakes" 
-                 className="w-full h-auto border-2 border-black object-cover"
-                 width="600"
-                 height="600"
-                 loading="eager"
-               />
+               <div className="aspect-[3/4] w-full overflow-hidden border-2 border-black">
+                 <img 
+                   src="/hero.jpg" 
+                   alt="Giant stack of pancakes" 
+                   className="w-full h-full object-cover"
+                   loading="eager"
+                 />
+               </div>
             </div>
           </div>
         </div>
