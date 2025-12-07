@@ -1,7 +1,7 @@
 modules = ["nodejs-20"]
 [nix]
 channel = "stable-25_05"
-packages = ["unzip", "libwebp"]
+packages = ["unzip", "libwebp", "imagemagick"]
 
 [agent]
 expertMode = true
