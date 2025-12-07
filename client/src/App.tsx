@@ -128,7 +128,7 @@ const App: React.FC = () => {
           </div>
           
           <div className="mt-12 text-center">
-             <p className="font-bold text-lg mb-4">...AND TONS MORE OMELETTES, WAFFLES & BAD COFFEE.</p>
+             <p className="font-bold text-lg mb-4">...AND TONS MORE OMELETTES, WAFFLES & BOTTOMLESS COFFEE.</p>
              <BrutalButton variant="primary">Download Full PDF Menu</BrutalButton>
           </div>
         </Section>
