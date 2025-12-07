@@ -84,6 +84,8 @@ The project is configured for Vercel deployment with:
   - Added fetchpriority="high" directly on hero img
   - Code splitting with vendor chunk for React
   - Terser minification with console/debugger removal
+  - Enhanced hero image colors in source file (saturation +25%, contrast boost) instead of CSS filters
+  - Optimized hero images to exact display dimensions (400w mobile, 600w desktop)
 
 ## Performance Features
 
