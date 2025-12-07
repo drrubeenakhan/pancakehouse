@@ -60,7 +60,7 @@ const App: React.FC = () => {
               <span className="text-ph-yellow stroke-text">PANCAKE HOUSE</span>
             </h1>
             <p className="font-bold text-lg md:text-2xl mb-8 max-w-lg leading-tight">
-              The 30-year-old breakfast institution that tastes like cartoons and maple syrup.
+              The Hamilton breakfast staple that tastes like the mornings you grew up loving.
             </p>
             <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
               <BrutalButton onClick={scrollToMenu} variant="primary">See The Menu</BrutalButton>
