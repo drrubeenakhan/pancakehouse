@@ -3,7 +3,7 @@ import { MenuItem, Rule, Review } from '@/types';
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: '1',
-    name: 'The Marauder Stack',
+    name: '#1 — The Marauder Stack',
     description: "Two fluffy pancakes, 2 strips of bacon, 2 sausages, and 1 egg. A no-nonsense breakfast raid on hunger.",
     price: '$13.95',
     badge: 'STUDENT FUEL',
@@ -11,7 +11,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: '2',
-    name: 'French Toast Frenzy',
+    name: '#2 — French Toast Frenzy',
     description: "Three slices of golden French toast, 2 back bacon, 2 sausages, and 1 egg. Syrup, carbs, and chaos in the best way.",
     price: '$16.95',
     badge: 'FAN FAVE',
@@ -19,14 +19,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: '3',
-    name: 'The Lumberjack',
+    name: '#3 — The Lumberjack',
     description: "2 back bacon, 2 sausages, 2 eggs, homefries, and toast. Built for people who treat breakfast like a full-time job.",
     price: '$14.95',
     image: 'https://picsum.photos/400/300?random=3'
   },
   {
     id: '4',
-    name: 'Exam Week Special',
+    name: '#4 — Exam Week Special',
     description: "2 eggs, 2 bacon, 2 sausages, homefries, and toast. A crash-course survival kit with caffeine optional and carbs mandatory.",
     price: '$13.95',
     badge: 'LIMITED TIME',
