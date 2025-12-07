@@ -77,17 +77,27 @@ The project is configured for Vercel deployment with:
 - Updated address: 1520 Main St W, Hamilton, ON L8S 1C8
 - Updated hours: OPEN 8 AM - 2:00 PM Daily
 - Optimized images for Lighthouse 100 scores
+- **Dec 7, 2025**: Major Lighthouse optimization overhaul:
+  - Removed CSS filters from hero image (reduced render delay)
+  - Added inline critical CSS to prevent FOUC
+  - Added responsive hero images (hero-400.webp for mobile)
+  - Added fetchpriority="high" directly on hero img
+  - Code splitting with vendor chunk for React
+  - Terser minification with console/debugger removal
 
 ## Performance Features
 
 - Hero image preload with fetchpriority="high" for fast LCP
+- Responsive images with srcset (400w mobile, 600w desktop)
 - WebP image format with JPEG fallback for all images
-- Font preloading for Bangers and Public Sans
-- font-display: swap for faster FCP
+- Font preloading for Bangers with font-display: block
+- Inline critical CSS in HTML to prevent FOUC
 - Lazy loading with decoding="async" for below-fold images
 - Explicit width/height on images to prevent CLS
 - Gzip compression in production
 - Long-term caching for static assets
+- Code splitting: vendor chunk separates React from app code
+- Terser minification removes console logs in production
 
 ## Accessibility Features
 

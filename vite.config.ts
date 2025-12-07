@@ -27,13 +27,24 @@ export default defineConfig(({ mode }) => {
       emptyOutDir: true,
       rollupOptions: {
         output: {
-          manualChunks: undefined
+          manualChunks: {
+            vendor: ['react', 'react-dom']
+          }
         }
       },
       cssCodeSplit: false,
-      minify: 'esbuild',
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true
+        }
+      },
       target: 'es2020',
-      sourcemap: false
+      sourcemap: false,
+      modulePreload: {
+        polyfill: false
+      }
     }
   };
 });

@@ -78,14 +78,20 @@ const App: React.FC = () => {
             <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
                <div className="aspect-[3/4] w-full overflow-hidden border-2 border-black">
                  <picture>
-                   <source srcSet="/hero.webp" type="image/webp" />
+                   <source 
+                     srcSet="/hero-400.webp 400w, /hero.webp 600w" 
+                     sizes="(max-width: 768px) 400px, 600px"
+                     type="image/webp" 
+                   />
                    <img 
-                     src="/hero.jpg" 
+                     src="/hero.webp" 
                      alt="Delicious breakfast dishes at Maple Leaf Pancake House featuring waffles, eggs benedict, and home fries" 
-                     className="w-full h-full object-cover saturate-[1.3] contrast-[1.1] brightness-[1.05]"
+                     className="w-full h-full object-cover"
                      loading="eager"
+                     decoding="sync"
                      width="600"
                      height="800"
+                     {...{ fetchpriority: "high" } as any}
                    />
                  </picture>
                </div>
