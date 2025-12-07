@@ -8,26 +8,27 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bangers&family=Public+Sans:wght@400;700;900&display=optional" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Public+Sans:wght@400;700;900&display=optional"></noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Public+Sans:wght@400;700;900&display=block">
   
   <style>
-    html { opacity: 0; }
-    html.fonts-ready { opacity: 1; transition: opacity 0.1s ease-in; }
+    html { visibility: hidden; }
+    html.fonts-ready { visibility: visible; }
   </style>
   <script>
     (function() {
-      var loaded = false;
-      function showPage() {
-        if (!loaded) {
-          loaded = true;
+      var revealed = false;
+      function reveal() {
+        if (!revealed) {
+          revealed = true;
           document.documentElement.classList.add('fonts-ready');
         }
       }
       if (document.fonts && document.fonts.ready) {
-        document.fonts.ready.then(showPage);
+        document.fonts.ready.then(reveal);
+      } else {
+        reveal();
       }
-      setTimeout(showPage, 150);
+      setTimeout(reveal, 3000);
     })();
   </script>
 </head>
