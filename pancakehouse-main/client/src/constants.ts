@@ -4,31 +4,31 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     id: '1',
     name: 'The Marauder Stack',
-    description: "Five buttermilk discs soaked in darkness (coffee-infused syrup) and chocolate chips. Keeps you awake through any lecture.",
-    price: '$14.50',
+    description: "Two fluffy pancakes, 2 strips of bacon, 2 sausages, and 1 egg. A no-nonsense breakfast raid on hunger.",
+    price: '$13.95',
     badge: 'STUDENT FUEL',
     image: 'https://picsum.photos/400/300?random=1'
   },
   {
     id: '2',
-    name: 'Strawberry Slam',
-    description: "Whipped cream mountain, strawberry river, powdered sugar blizzard. It's not breakfast, it's a dessert disguised as a meal.",
-    price: '$15.00',
+    name: 'French Toast Frenzy',
+    description: "Three slices of golden French toast, 2 back bacon, 2 sausages, and 1 egg. Syrup, carbs, and chaos in the best way.",
+    price: '$16.95',
     badge: 'FAN FAVE',
     image: 'https://picsum.photos/400/300?random=2'
   },
   {
     id: '3',
     name: 'The Lumberjack',
-    description: "Eggs, bacon, sausage, ham, home fries, toast, and two pancakes. Eat this and hibernate.",
-    price: '$18.00',
+    description: "2 back bacon, 2 sausages, 2 eggs, homefries, and toast. Built for people who treat breakfast like a full-time job.",
+    price: '$14.95',
     image: 'https://picsum.photos/400/300?random=3'
   },
   {
     id: '4',
     name: 'Exam Week Special',
-    description: "Two eggs, toast, bottomless coffee, and a supportive pat on the back from the server.",
-    price: '$10.99',
+    description: "2 eggs, 2 bacon, 2 sausages, homefries, and toast. A crash-course survival kit with caffeine optional and carbs mandatory.",
+    price: '$13.95',
     badge: 'LIMITED TIME',
     image: 'https://picsum.photos/400/300?random=4'
   }
