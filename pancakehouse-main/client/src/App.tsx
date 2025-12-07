@@ -229,15 +229,15 @@ const App: React.FC = () => {
                     <rect x="300" y="0" width="25" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
                     <text x="312" y="100" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 312, 100)">COOTES DR</text>
                     
-                    <rect x="330" y="30" width="60" height="120" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
-                    <text x="360" y="85" fill="#1e40af" fontWeight="bold" fontSize="11" textAnchor="middle">MCMASTER</text>
-                    <text x="360" y="100" fill="#1e40af" fontWeight="bold" fontSize="11" textAnchor="middle">UNIVERSITY</text>
+                    <rect x="330" y="50" width="65" height="80" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
+                    <text x="362" y="85" fill="#1e40af" fontWeight="bold" fontSize="10" textAnchor="middle">MCMASTER</text>
+                    <text x="362" y="98" fill="#1e40af" fontWeight="bold" fontSize="10" textAnchor="middle">UNIV.</text>
                     
-                    <g className="animate-bounce">
-                      <path d="M200 150 L200 170 L185 180 L215 180 L200 170" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
-                      <circle cx="200" cy="138" r="22" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
+                    <g className="animate-pulse">
+                      <path d="M200 150 L200 165 L188 180 L212 180 L200 165" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
+                      <circle cx="200" cy="130" r="24" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
+                      <text x="200" y="138" fill="white" fontWeight="bold" fontSize="16" textAnchor="middle">PH</text>
                     </g>
-                    <text x="200" y="145" fill="white" fontWeight="bold" fontSize="14" textAnchor="middle">PH</text>
                     <text x="200" y="250" fill="#1a1a1a" fontWeight="bold" fontSize="11" textAnchor="middle">PANCAKE HOUSE</text>
                   </svg>
                </div>
