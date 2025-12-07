@@ -22,7 +22,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: '#3 — The Lumberjack',
     description: "2 back bacon, 2 sausages, 2 eggs, homefries, and toast. Built for people who treat breakfast like a full-time job.",
     price: '$14.95',
-    image: 'https://picsum.photos/400/300?random=3'
+    image: '/assets/lumberjack.jpg'
   },
   {
     id: '4',
