@@ -56,10 +56,7 @@ const App: React.FC = () => {
             </div>
             <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.8] mb-6 drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
               MAPLE LEAF<br />
-              <span className="text-ph-yellow stroke-text">PANCAKE HOUSE</span><br />
-              SATURDAY<br />
-              MORNING<br />
-              FOREVER
+              <span className="text-ph-yellow stroke-text">PANCAKE HOUSE</span>
             </h1>
             <p className="font-bold text-lg md:text-2xl mb-8 max-w-lg leading-tight">
               The 30-year-old breakfast institution that tastes like cartoons and maple syrup.
