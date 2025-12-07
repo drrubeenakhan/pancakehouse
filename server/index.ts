@@ -36,6 +36,7 @@ async function createServer() {
 
       let template: string;
       let render: (url: string) => string;
+      let cssContent = '';
 
       if (!isProduction) {
         template = fs.readFileSync(
@@ -44,6 +45,18 @@ async function createServer() {
         );
         template = await vite.transformIndexHtml(url, template);
         render = (await vite.ssrLoadModule('/src/entry-server.tsx')).render;
+        
+        // Get the CSS from Vite in dev mode
+        try {
+          const cssModule = await vite.ssrLoadModule('/src/index.css');
+          const cssResult = await vite.transformRequest('/src/index.css');
+          if (cssResult && cssResult.code) {
+            cssContent = `<style>${cssResult.code}</style>`;
+          }
+        } catch (e) {
+          // Fallback: just link to the CSS
+          cssContent = '<link rel="stylesheet" href="/src/index.css">';
+        }
       } else {
         template = fs.readFileSync(
           path.resolve(__dirname, '../dist/public/index.html'),
@@ -53,7 +66,12 @@ async function createServer() {
       }
 
       const appHtml = render(url);
-      const html = template.replace('<!--app-html-->', appHtml);
+      let html = template.replace('<!--app-html-->', appHtml);
+      
+      // Inject CSS before </head>
+      if (cssContent) {
+        html = html.replace('</head>', `${cssContent}</head>`);
+      }
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
     } catch (e) {
