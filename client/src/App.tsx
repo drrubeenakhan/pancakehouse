@@ -211,10 +211,17 @@ const App: React.FC = () => {
               </div>
 
               <div>
-                 <BrutalButton variant="primary" fullWidth className="md:w-auto">
-                   OPEN IN MAPS 
-                   <span className="ml-2">↗</span>
-                 </BrutalButton>
+                 <a 
+                   href="https://www.google.com/maps/dir/?api=1&destination=1520+Main+St+W,+Hamilton,+ON+L8S+1C8" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Get directions to Maple Leaf Pancake House on Google Maps"
+                 >
+                   <BrutalButton variant="primary" fullWidth className="md:w-auto">
+                     OPEN IN MAPS 
+                     <span className="ml-2">↗</span>
+                   </BrutalButton>
+                 </a>
               </div>
             </div>
 

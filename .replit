@@ -42,10 +42,6 @@ externalPort = 3000
 localPort = 36737
 externalPort = 3001
 
-[[ports]]
-localPort = 46471
-externalPort = 3002
-
 [deployment]
 deploymentTarget = "autoscale"
 run = ["bash", "-c", "cd pancakehouse-main && NODE_ENV=production npx tsx server/index.ts"]
