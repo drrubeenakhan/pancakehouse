@@ -82,7 +82,7 @@ const App: React.FC = () => {
                    <img 
                      src="/hero.jpg" 
                      alt="Pancake House storefront" 
-                     className="w-full h-full object-cover"
+                     className="w-full h-full object-cover saturate-[1.3] contrast-[1.1] brightness-[1.05]"
                      loading="eager"
                    />
                  </picture>
