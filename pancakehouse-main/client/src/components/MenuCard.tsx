@@ -14,7 +14,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, onOrder }) => {
           <img 
             src={item.image} 
             alt={item.name} 
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+            className="w-full h-full object-cover"
             width="400"
             height="300"
             loading="lazy"
