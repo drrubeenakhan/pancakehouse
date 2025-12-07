@@ -45,7 +45,7 @@ const App: React.FC = () => {
     <main className="min-h-screen bg-ph-cream font-body">
       
       <div className="bg-ph-yellow border-b-4 border-black py-2 px-4 text-center font-bold tracking-widest text-xs md:text-sm uppercase">
-        Pancake House · West Hamilton · Since 1999
+        Maple Leaf Pancake House · West Hamilton · Since 1999
       </div>
 
       <Section className="bg-ph-red text-white" pattern="dots">
@@ -55,8 +55,8 @@ const App: React.FC = () => {
               SERVING MCMASTER & WESTDALE
             </div>
             <h1 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.8] mb-6 drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
-              PANCAKE<br />
-              <span className="text-ph-yellow stroke-text">HOUSE</span><br />
+              MAPLE LEAF<br />
+              <span className="text-ph-yellow stroke-text">PANCAKE HOUSE</span><br />
               SATURDAY<br />
               MORNING<br />
               FOREVER
@@ -258,9 +258,9 @@ const App: React.FC = () => {
 
       <footer className="bg-black text-white py-12 border-t-4 border-ph-yellow">
         <div className="container mx-auto px-4 text-center">
-          <p className="font-display text-4xl mb-4 text-ph-yellow">PANCAKE HOUSE</p>
+          <p className="font-display text-4xl mb-4 text-ph-yellow">MAPLE LEAF PANCAKE HOUSE</p>
           <p className="font-bold text-sm text-gray-400">
-            © {new Date().getFullYear()} Pancake House. Not affiliated with any cereal brands.
+            © {new Date().getFullYear()} Maple Leaf Pancake House. Not affiliated with any cereal brands.
             <br/>Designed for hungry students.
           </p>
         </div>
