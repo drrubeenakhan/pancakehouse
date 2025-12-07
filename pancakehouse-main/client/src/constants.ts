@@ -7,7 +7,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Two fluffy pancakes, 2 strips of bacon, 2 sausages, and 1 egg. A no-nonsense breakfast raid on hunger.",
     price: '$13.95',
     badge: 'STUDENT FUEL',
-    image: 'https://picsum.photos/400/300?random=1'
+    image: '/assets/marauder-stack.jpg'
   },
   {
     id: '2',
