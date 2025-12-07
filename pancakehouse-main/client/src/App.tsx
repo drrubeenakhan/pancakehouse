@@ -256,7 +256,11 @@ const App: React.FC = () => {
           <p className="font-display text-4xl mb-4 text-ph-yellow">MAPLE LEAF PANCAKE HOUSE</p>
           <p className="font-bold text-sm text-gray-400">
             © {new Date().getFullYear()} Maple Leaf Pancake House. Not affiliated with any cereal brands.
-            <br/>Designed for hungry students.
+          </p>
+          <p className="font-bold text-sm text-gray-400 mt-2">
+            <a href="https://goldberg-web-design.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-ph-yellow transition-colors">
+              Designed for Hungry Students by Goldberg
+            </a>
           </p>
         </div>
       </footer>
