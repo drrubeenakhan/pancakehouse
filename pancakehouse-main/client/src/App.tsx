@@ -221,24 +221,27 @@ const App: React.FC = () => {
                     <rect width="400" height="400" fill="#FFFDF0" />
                     
                     <rect x="0" y="180" width="400" height="40" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
-                    <text x="60" y="205" fill="#666" fontWeight="bold" fontSize="12">MAIN ST W</text>
+                    <rect x="20" y="188" width="90" height="24" fill="#1a1a1a" rx="2" />
+                    <text x="65" y="205" fill="white" fontWeight="bold" fontSize="11" textAnchor="middle">MAIN ST W</text>
                     
-                    <rect x="120" y="0" width="25" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
-                    <text x="132" y="320" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 132, 320)">NORFOLK ST N</text>
+                    <rect x="150" y="0" width="25" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
+                    <text x="162" y="320" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 162, 320)">NORFOLK ST N</text>
                     
-                    <rect x="300" y="0" width="25" height="400" fill="#e5e5e5" stroke="#1a1a1a" strokeWidth="2" />
-                    <text x="312" y="100" fill="#666" fontWeight="bold" fontSize="10" textAnchor="middle" transform="rotate(-90, 312, 100)">COOTES DR</text>
-                    
-                    <rect x="330" y="50" width="65" height="80" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
-                    <text x="362" y="85" fill="#1e40af" fontWeight="bold" fontSize="10" textAnchor="middle">MCMASTER</text>
-                    <text x="362" y="98" fill="#1e40af" fontWeight="bold" fontSize="10" textAnchor="middle">UNIV.</text>
+                    <g>
+                      <rect x="320" y="80" width="70" height="50" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
+                      <text x="355" y="102" fill="#1e40af" fontWeight="bold" fontSize="9" textAnchor="middle">MCMASTER</text>
+                      <text x="355" y="115" fill="#1e40af" fontWeight="bold" fontSize="9" textAnchor="middle">UNIVERSITY</text>
+                      <path d="M305 105 L320 105" fill="none" stroke="#1a1a1a" strokeWidth="2" />
+                      <path d="M315 100 L320 105 L315 110" fill="none" stroke="#1a1a1a" strokeWidth="2" />
+                      <text x="290" y="109" fill="#666" fontSize="8" textAnchor="middle">5 MIN</text>
+                    </g>
                     
                     <g className="animate-pulse">
-                      <path d="M200 150 L200 165 L188 180 L212 180 L200 165" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
-                      <circle cx="200" cy="130" r="24" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
-                      <text x="200" y="138" fill="white" fontWeight="bold" fontSize="16" textAnchor="middle">PH</text>
+                      <path d="M220 150 L220 165 L208 180 L232 180 L220 165" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="2" />
+                      <circle cx="220" cy="130" r="24" fill="#FF2A2A" stroke="#1a1a1a" strokeWidth="3" />
+                      <text x="220" y="138" fill="white" fontWeight="bold" fontSize="16" textAnchor="middle">PH</text>
                     </g>
-                    <text x="200" y="250" fill="#1a1a1a" fontWeight="bold" fontSize="11" textAnchor="middle">PANCAKE HOUSE</text>
+                    <text x="220" y="250" fill="#1a1a1a" fontWeight="bold" fontSize="11" textAnchor="middle">PANCAKE HOUSE</text>
                   </svg>
                </div>
             </div>
