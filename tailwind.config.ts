@@ -23,8 +23,8 @@ export default {
         border: 'hsl(var(--border))'
       },
       fontFamily: {
-        display: ['"Bangers"', 'cursive'],
-        body: ['"Public Sans"', 'sans-serif']
+        display: ['"Bangers"', '"Bangers Fallback"', 'Impact', 'Arial Black', 'cursive'],
+        body: ['"Public Sans"', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif']
       },
       boxShadow: {
         'hard': '6px 6px 0px 0px rgba(0,0,0,1)',
