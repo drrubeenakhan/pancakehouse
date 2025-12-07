@@ -15,7 +15,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Three slices of golden French toast, 2 back bacon, 2 sausages, and 1 egg. Syrup, carbs, and chaos in the best way.",
     price: '$16.95',
     badge: 'FAN FAVE',
-    image: 'https://picsum.photos/400/300?random=2'
+    image: '/assets/french-toast-frenzy.jpeg'
   },
   {
     id: '3',
