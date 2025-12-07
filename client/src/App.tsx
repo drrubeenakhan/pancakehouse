@@ -193,16 +193,13 @@ const App: React.FC = () => {
                   5 min walk from McMaster
                 </p>
                 <p className="text-2xl mt-4 border-t-4 border-white pt-4 inline-block">
-                  1234 Main Street West<br/>Hamilton, ON
+                  1520 Main St W<br/>Hamilton, ON L8S 1C8
                 </p>
               </div>
               
               <div className="bg-white text-black border-4 border-black p-6 inline-block transform rotate-1 shadow-hard mb-8">
                 <h3 className="font-display text-2xl mb-2">HOURS OF OPERATION</h3>
-                <ul className="text-left font-bold space-y-1">
-                  <li className="flex justify-between w-64"><span>MON-FRI</span> <span>7:00 AM - 2:00 PM</span></li>
-                  <li className="flex justify-between w-64 text-ph-red"><span>SAT-SUN</span> <span>8:00 AM - 3:00 PM</span></li>
-                </ul>
+                <p className="text-left font-bold text-xl">OPEN 8 AM - 2:00 PM Daily</p>
               </div>
 
               <div>
