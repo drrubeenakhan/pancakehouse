@@ -37,7 +37,7 @@ export const MENU_ITEMS: MenuItem[] = [
 export const RULES: Rule[] = [
   { id: 1, title: 'NO ONE LEAVES HUNGRY', text: "Portions are sized for offensive linemen and hungry engineering students." },
   { id: 2, title: 'COFFEE IS BOTTOMLESS', text: "The pot never stops until your hands stop shaking." },
-  { id: 3, title: 'CHAOS IS WELCOME', text: "Kids crying? Students debating physics? It's all part of the Saturday soundtrack." },
+  { id: 3, title: 'CHAOS IS WELCOME', text: "Bacon sizzling? Students debating physics? It's all part of the Saturday soundtrack." },
   { id: 4, title: 'SINCE 1999', text: "We've been flipping flapjacks in Westdale longer than you've been alive." },
 ];
 
