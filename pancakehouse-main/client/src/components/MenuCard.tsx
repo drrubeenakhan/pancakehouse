@@ -3,9 +3,10 @@ import { MenuItem } from '@/types';
 
 interface MenuCardProps {
   item: MenuItem;
+  onOrder?: () => void;
 }
 
-const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
+const MenuCard: React.FC<MenuCardProps> = ({ item, onOrder }) => {
   return (
     <div className="bg-white border-4 border-black shadow-hard p-4 flex flex-col h-full transform transition-transform hover:-rotate-1 overflow-visible">
       <div className="relative mb-4 overflow-visible">
@@ -33,7 +34,10 @@ const MenuCard: React.FC<MenuCardProps> = ({ item }) => {
       </div>
       <div className="mt-auto flex justify-between items-center border-t-2 border-black pt-3 border-dashed">
         <span className="font-display text-2xl text-ph-red">{item.price}</span>
-        <button className="bg-black text-white font-body font-bold text-xs uppercase px-3 py-1 hover:bg-ph-yellow hover:text-black transition-colors">
+        <button 
+          onClick={onOrder}
+          className="bg-black text-white font-body font-bold text-xs uppercase px-3 py-1 hover:bg-ph-yellow hover:text-black transition-colors"
+        >
           Order
         </button>
       </div>
