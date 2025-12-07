@@ -229,7 +229,7 @@ const App: React.FC = () => {
                     <text x="65" y="206" fill="white" fontWeight="bold" fontSize="12" textAnchor="middle">MAIN ST W</text>
                     
                     <rect x="145" y="280" width="18" height="80" fill="#1a1a1a" rx="2" />
-                    <text x="154" y="330" fill="white" fontWeight="bold" fontSize="9" textAnchor="middle" transform="rotate(-90, 154, 330)">NORFOLK ST N</text>
+                    <text x="154" y="320" fill="white" fontWeight="bold" fontSize="9" textAnchor="middle" transform="rotate(-90, 154, 320)">NORFOLK ST N</text>
                     
                     <g>
                       <rect x="310" y="75" width="80" height="55" fill="#dbeafe" stroke="#1a1a1a" strokeWidth="2" rx="4" />
