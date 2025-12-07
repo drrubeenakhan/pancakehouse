@@ -45,7 +45,7 @@ const App: React.FC = () => {
     <main className="min-h-screen bg-ph-cream font-body">
       
       <div className="bg-ph-yellow border-b-4 border-black py-2 px-4 text-center font-bold tracking-widest text-xs md:text-sm uppercase">
-        Pancake House · West Hamilton · Since 1994
+        Pancake House · West Hamilton · Since 1999
       </div>
 
       <Section className="bg-ph-red text-white" pattern="dots">
@@ -154,7 +154,7 @@ const App: React.FC = () => {
                 <p className="font-bold text-sm mb-1">Serving Size: 1 Neighborhood</p>
                 <div className="h-2 bg-black mb-4"></div>
                 <p className="font-body text-sm leading-relaxed font-semibold">
-                  Founded in 1994 by the Kowalski family. We survived the 90s diet crazes, the 2000s low-carb phase, and three recessions. We are fueled by McMaster students cramming for exams and locals needing a Saturday morning reset.
+                  Founded in 1999 by the Kowalski family. We survived the 90s diet crazes, the 2000s low-carb phase, and three recessions. We are fueled by McMaster students cramming for exams and locals needing a Saturday morning reset.
                 </p>
                 <div className="h-1 bg-black mt-4 mb-1"></div>
                 <p className="font-black text-xs">INGREDIENTS: LOVE, FLOUR, NOSTALGIA.</p>
