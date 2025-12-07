@@ -96,7 +96,7 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
           <span className="font-display text-3xl bg-ph-red text-white px-3 rotate-2 border-2 border-white">AWARD WINNING WAFFLE SPECIAL</span>
           <div>
-            <span className="font-body"><strong>Only $16.95:</strong> Comes with 2 Strips of Bacon, 2 Sausages, and 1 Egg.</span>
+            <span className="font-body"><span className="font-display text-2xl">Only $16.95:</span> Comes with 2 Strips of Bacon, 2 Sausages, and 1 Egg.</span>
           </div>
         </div>
       </div>
