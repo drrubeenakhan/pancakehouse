@@ -17,39 +17,30 @@
       font-display: block;
       src: url(/fonts/bangers-400.woff2) format('woff2');
     }
-    @font-face {
-      font-family: 'Bangers Fallback';
-      src: local('Impact'), local('Arial Black');
-      size-adjust: 105%;
-      ascent-override: 95%;
-      descent-override: 22%;
-      line-gap-override: 0%;
+    body { 
+      background-color: #FFFDF0; 
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
-    @font-face {
-      font-family: 'Public Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local('system-ui'), local('-apple-system'), local('Segoe UI'), local('Roboto'), local('sans-serif');
-    }
-    @font-face {
-      font-family: 'Public Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local('system-ui'), local('-apple-system'), local('Segoe UI'), local('Roboto'), local('sans-serif');
-    }
-    @font-face {
-      font-family: 'Public Sans';
-      font-style: normal;
-      font-weight: 900;
-      font-display: swap;
-      src: local('system-ui'), local('-apple-system'), local('Segoe UI'), local('Roboto'), local('sans-serif');
-    }
-    body { background-color: #FFFDF0; }
-    html { opacity: 0; animation: fadeIn 0.1s ease-in forwards; animation-delay: 0.05s; }
-    @keyframes fadeIn { to { opacity: 1; } }
+    .fonts-loading { visibility: hidden; }
+    .fonts-loaded { visibility: visible; }
   </style>
+  <script>
+    document.documentElement.className = 'fonts-loading';
+    if ('fonts' in document) {
+      Promise.all([
+        document.fonts.load('400 1em Bangers')
+      ]).then(function() {
+        document.documentElement.className = 'fonts-loaded';
+      }).catch(function() {
+        document.documentElement.className = 'fonts-loaded';
+      });
+      setTimeout(function() {
+        document.documentElement.className = 'fonts-loaded';
+      }, 300);
+    } else {
+      document.documentElement.className = 'fonts-loaded';
+    }
+  </script>
 </head>
 <body class="bg-ph-cream text-ph-black antialiased overflow-x-hidden">
   <div id="root"><!--app-html--></div>
