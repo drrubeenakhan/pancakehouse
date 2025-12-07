@@ -6,6 +6,7 @@
   <title>Pancake House | Saturday Morning Forever</title>
   <meta name="description" content="The 30-year-old breakfast institution serving McMaster and Westdale. Since 1999.">
   
+  <link rel="stylesheet" href="/src/index.css">
   <link rel="preload" as="image" href="/hero.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="/fonts/bangers-400.woff2" as="font" type="font/woff2" crossorigin>
   
@@ -24,7 +25,23 @@
   </style>
 </head>
 <body class="bg-ph-cream text-ph-black antialiased overflow-x-hidden">
-  <div id="root"><!--app-html--></div>
+  <div id="root" style="visibility:hidden"><!--app-html--></div>
   <script type="module" src="/src/entry-client.tsx"></script>
+  <script>
+    (function() {
+      var link = document.querySelector('link[href="/src/index.css"]');
+      if (link) {
+        if (link.sheet) {
+          document.getElementById('root').style.visibility = 'visible';
+        } else {
+          link.onload = function() {
+            document.getElementById('root').style.visibility = 'visible';
+          };
+        }
+      } else {
+        document.getElementById('root').style.visibility = 'visible';
+      }
+    })();
+  </script>
 </body>
 </html>
