@@ -7,18 +7,24 @@ interface MenuCardProps {
 }
 
 const MenuCard: React.FC<MenuCardProps> = ({ item, onOrder }) => {
+  const webpImage = item.image.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  
   return (
     <div className="bg-white border-4 border-black shadow-hard p-4 flex flex-col h-full transform transition-transform hover:-rotate-1 overflow-visible">
       <div className="relative mb-4 overflow-visible">
         <div className="border-4 border-black overflow-hidden bg-gray-200 aspect-[4/3]">
-          <img 
-            src={item.image} 
-            alt={item.name} 
-            className="w-full h-full object-cover"
-            width="400"
-            height="300"
-            loading="lazy"
-          />
+          <picture>
+            <source srcSet={webpImage} type="image/webp" />
+            <img 
+              src={item.image} 
+              alt={item.name} 
+              className="w-full h-full object-cover"
+              width="400"
+              height="300"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
         {item.badge && (
           <div className="absolute top-[-10px] right-[-10px] bg-ph-teal border-2 border-black text-white text-xs font-bold px-3 py-1 rotate-12 shadow-hard-sm z-10">
@@ -36,6 +42,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ item, onOrder }) => {
         <span className="font-display text-2xl text-ph-red">{item.price}</span>
         <button 
           onClick={onOrder}
+          aria-label={`Order ${item.name}`}
           className="bg-black text-white font-body font-bold text-xs uppercase px-3 py-1 hover:bg-ph-yellow hover:text-black transition-colors"
         >
           Order

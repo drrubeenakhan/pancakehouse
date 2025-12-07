@@ -81,9 +81,11 @@ const App: React.FC = () => {
                    <source srcSet="/hero.webp" type="image/webp" />
                    <img 
                      src="/hero.jpg" 
-                     alt="Pancake House storefront" 
+                     alt="Delicious breakfast dishes at Maple Leaf Pancake House featuring waffles, eggs benedict, and home fries" 
                      className="w-full h-full object-cover saturate-[1.3] contrast-[1.1] brightness-[1.05]"
                      loading="eager"
+                     width="600"
+                     height="800"
                    />
                  </picture>
                </div>
@@ -212,7 +214,8 @@ const App: React.FC = () => {
 
             <div className="flex-1 w-full relative">
                <div className="aspect-square bg-ph-cream border-4 border-black relative overflow-hidden shadow-hard-xl">
-                  <svg viewBox="0 0 400 400" className="w-full h-full">
+                  <svg viewBox="0 0 400 400" className="w-full h-full" role="img" aria-label="Map showing Maple Leaf Pancake House location at 1520 Main St W, 5 minutes walk from McMaster University">
+                    <title>Location map of Maple Leaf Pancake House</title>
                     <rect width="400" height="400" fill="#FFFDF0" />
                     
                     <rect x="0" y="185" width="400" height="35" fill="#d4d4d4" stroke="#1a1a1a" strokeWidth="2" />

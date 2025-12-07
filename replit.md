@@ -73,11 +73,25 @@ The project is configured for Vercel deployment with:
 - Configured Tailwind CSS with custom theme
 - Added Vercel deployment configuration
 - Created build pipeline with sitemap generation
+- Moved all files from pancakehouse-main/ to root for Vercel
+- Updated address: 1520 Main St W, Hamilton, ON L8S 1C8
+- Updated hours: OPEN 8 AM - 2:00 PM Daily
+- Optimized images for Lighthouse 100 scores
 
 ## Performance Features
 
-- Font loading with `display=optional` for zero CLS
-- Image optimization scripts
-- Single bundle (no code splitting) for instant navigation
+- Hero image preload with fetchpriority="high" for fast LCP
+- WebP image format with JPEG fallback for all images
+- Font preloading for Bangers and Public Sans
+- font-display: swap for faster FCP
+- Lazy loading with decoding="async" for below-fold images
+- Explicit width/height on images to prevent CLS
 - Gzip compression in production
 - Long-term caching for static assets
+
+## Accessibility Features
+
+- Descriptive alt text on all images
+- aria-labels on interactive elements
+- SVG map has role="img" and title for screen readers
+- Semantic HTML structure with proper headings
