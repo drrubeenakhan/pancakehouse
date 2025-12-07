@@ -79,7 +79,7 @@ const App: React.FC = () => {
             </div>
             <div className="relative border-4 border-black bg-white p-2 rotate-3 shadow-hard-xl overflow-visible">
                <img 
-                 src="/hero.jpg" 
+                 src="https://picsum.photos/600/600?random=hero" 
                  alt="Giant stack of pancakes" 
                  className="w-full h-auto border-2 border-black object-cover"
                  width="600"
