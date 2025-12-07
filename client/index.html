@@ -14,33 +14,14 @@
       font-family: 'Bangers';
       font-style: normal;
       font-weight: 400;
-      font-display: block;
+      font-display: swap;
       src: url(/fonts/bangers-400.woff2) format('woff2');
     }
     body { 
       background-color: #FFFDF0; 
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
-    .fonts-loading { visibility: hidden; }
-    .fonts-loaded { visibility: visible; }
   </style>
-  <script>
-    document.documentElement.className = 'fonts-loading';
-    if ('fonts' in document) {
-      Promise.all([
-        document.fonts.load('400 1em Bangers')
-      ]).then(function() {
-        document.documentElement.className = 'fonts-loaded';
-      }).catch(function() {
-        document.documentElement.className = 'fonts-loaded';
-      });
-      setTimeout(function() {
-        document.documentElement.className = 'fonts-loaded';
-      }, 300);
-    } else {
-      document.documentElement.className = 'fonts-loaded';
-    }
-  </script>
 </head>
 <body class="bg-ph-cream text-ph-black antialiased overflow-x-hidden">
   <div id="root"><!--app-html--></div>
