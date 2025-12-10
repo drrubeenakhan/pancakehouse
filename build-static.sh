@@ -23,4 +23,9 @@ if [ -f "client/public/robots.txt" ]; then
   cp client/public/robots.txt dist/public/robots.txt
 fi
 
+echo "📄 Copying PDF menu..."
+if [ -f "client/public/menu.pdf" ]; then
+  cp client/public/menu.pdf dist/public/menu.pdf
+fi
+
 echo "✅ Build complete! Output in dist/public/"
