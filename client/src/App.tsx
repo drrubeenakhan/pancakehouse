@@ -129,7 +129,9 @@ const App: React.FC = () => {
           
           <div className="mt-12 text-center">
              <p className="font-bold text-lg mb-4">...AND TONS MORE OMELETTES, WAFFLES & BOTTOMLESS COFFEE.</p>
-             <BrutalButton variant="primary">Download Full PDF Menu</BrutalButton>
+             <a href="/menu.pdf" target="_blank" rel="noopener noreferrer">
+               <BrutalButton variant="primary">View Full Menu</BrutalButton>
+             </a>
           </div>
         </Section>
       </section>
