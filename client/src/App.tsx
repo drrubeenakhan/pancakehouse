@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { getDailySpecial } from '@/services/geminiService';
 import { MENU_ITEMS, RULES, REVIEWS } from '@/constants';
 import BrutalButton from '@/components/BrutalButton';
@@ -288,6 +290,8 @@ const App: React.FC = () => {
           </p>
         </div>
       </footer>
+      <Analytics />
+      <SpeedInsights />
     </main>
   );
 };
