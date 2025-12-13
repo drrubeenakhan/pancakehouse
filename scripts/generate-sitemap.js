@@ -8,7 +8,8 @@ const toAbsolute = (p) => path.resolve(__dirname, '..', p);
 const SITE_URL = process.env.SITE_URL || 'https://mapleleafpancakehouse.ca';
 
 const routes = [
-  { url: '/', priority: 1.0, changefreq: 'weekly' }
+  { url: '/', priority: 1.0, changefreq: 'weekly' },
+  { url: '/menu.pdf', priority: 0.8, changefreq: 'monthly' }
 ];
 
 function generateSitemap() {
