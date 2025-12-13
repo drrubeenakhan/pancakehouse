@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pancakehouse-westhamilton.vercel.app/sitemap.xml
+Sitemap: https://mapleleafpancakehouse.ca/sitemap.xml

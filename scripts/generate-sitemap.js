@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, '..', p);
 
-const SITE_URL = process.env.SITE_URL || 'https://pancakehouse-westhamilton.vercel.app';
+const SITE_URL = process.env.SITE_URL || 'https://mapleleafpancakehouse.ca';
 
 const routes = [
   { url: '/', priority: 1.0, changefreq: 'weekly' }
