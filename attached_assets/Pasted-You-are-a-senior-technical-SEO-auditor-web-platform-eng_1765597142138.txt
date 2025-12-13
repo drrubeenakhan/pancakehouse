@@ -1,0 +1,156 @@
+You are a senior technical SEO auditor + web platform engineer.
+
+CONTEXT (DO NOT IGNORE):
+- Production site hosted on Vercel
+- SSR is enabled (full HTML rendered server-side)
+- Lighthouse score: 100
+- Domain configuration is already correct in Vercel:
+  - PRIMARY: https://www.mapleleafpancakehouse.ca
+  - https://mapleleafpancakehouse.ca → 301 to primary
+- Goal: comprehensive sanity check for SEO on the LIVE SITE OUTPUT.
+- Do NOT recommend duplicate redirect logic (Vercel handles primary-domain redirects at the edge).
+
+SCOPE:
+Audit the LIVE production site as Googlebot would experience it. Validate:
+indexation signals, canonical correctness, redirects, crawlability, discoverability, structured data, local SEO signals, on-page essentials, duplication risk, and regression risks.
+
+TARGET URLS TO TEST:
+1) https://www.mapleleafpancakehouse.ca/
+2) https://mapleleafpancakehouse.ca/
+3) http://www.mapleleafpancakehouse.ca/
+4) http://mapleleafpancakehouse.ca/
+Also test: /sitemap.xml and /robots.txt and /menu.pdf (if exists)
+
+────────────────────────────────────────
+1) RESPONSE STATUS, HEADERS, & EDGE BEHAVIOR
+────────────────────────────────────────
+For each target URL above, verify:
+- Status codes: 200 for canonical URL, 301 for variants
+- No redirect chains (>1 hop)
+- Final URL is always the canonical
+Check response headers for:
+- content-type correctness (text/html for pages, application/xml for sitemap, application/pdf for pdf)
+- cache headers are sane (no accidental no-store everywhere)
+- any X-Robots-Tag header (ensure no accidental noindex)
+Output:
+- Table: URL | Status | Final URL | Redirect hops | Notes
+
+────────────────────────────────────────
+2) CANONICAL + URL NORMALIZATION
+────────────────────────────────────────
+Inspect the rendered HTML <head> for the homepage:
+- Exactly ONE <link rel="canonical">
+- Canonical matches primary domain EXACTLY (www vs non-www)
+- Protocol correctness (https)
+- Trailing slash consistency
+Also validate:
+- og:url matches canonical EXACTLY
+- Any alternate link tags do not conflict
+Output:
+- Canonical tag text + PASS/FAIL
+- og:url tag text + PASS/FAIL
+- Any mismatches listed explicitly
+
+────────────────────────────────────────
+3) ROBOTS.TXT & INDEXATION SAFETY
+────────────────────────────────────────
+Fetch /robots.txt and evaluate:
+- Is sitemap referenced?
+- Any disallow rules that block important content/assets?
+Check on-page:
+- <meta name="robots"> content
+Check headers:
+- X-Robots-Tag (if present)
+Output:
+- Indexation posture: CLEAN / RISKY / BROKEN
+- List any directives that could block indexing or assets
+
+────────────────────────────────────────
+4) SITEMAP VALIDATION
+────────────────────────────────────────
+Fetch /sitemap.xml and validate:
+- Only canonical URLs included
+- No redirected URLs
+- No 4xx/5xx links
+- lastmod format correct and realistic
+- Includes key assets if intended (e.g. /menu.pdf) and ONLY if it should be indexed
+Output:
+- Sitemap verdict + any corrected entries suggested
+
+────────────────────────────────────────
+5) STRUCTURED DATA & RICH RESULTS READINESS
+────────────────────────────────────────
+Extract and validate JSON-LD:
+- Restaurant or LocalBusiness schema correctness
+- url field matches canonical EXACTLY
+- address, geo, openingHoursSpecification, telephone validity
+- menu property linking to /menu.pdf if exists
+- sameAs only if real official profiles exist
+If reviews exist on-site:
+- only then discuss aggregateRating (do not fabricate)
+Output:
+- Schema items found + fields missing + priority fixes
+- Keep suggestions grounded in on-page truth
+
+────────────────────────────────────────
+6) ON-PAGE SEO ESSENTIALS (HARD SANITY CHECK)
+────────────────────────────────────────
+Confirm:
+- Single H1
+- Title tag length + uniqueness + intent
+- Meta description exists + not duplicated
+- Headings hierarchy not broken
+- Images have alt where appropriate (key images)
+- Internal links point to canonical URLs (no non-www internal linking)
+Output:
+- On-page essentials checklist with PASS/FAIL
+
+────────────────────────────────────────
+7) DUPLICATION & SOFT-404 RISK (SSR + REWRITES AWARE)
+────────────────────────────────────────
+Determine whether:
+- Multiple paths serve identical 200 HTML (e.g. /about returning homepage)
+- If so, assess indexation risk:
+  - Are those paths linked internally?
+  - Are they in sitemap?
+  - Do they produce indexable signals?
+Recommend only minimal guardrails:
+- Proper 404 handling if routes expand
+- noindex for junk routes ONLY if they exist and are crawlable
+Output:
+- Duplicate risk level: NONE / LOW / PRESENT
+- Specific examples if present
+
+────────────────────────────────────────
+8) LOCAL SEO SIGNALS (HIGH ROI)
+────────────────────────────────────────
+Verify presence/quality of local trust signals on the homepage:
+- NAP (name/address/phone) consistency
+- Embed or link to Google Maps/GBP
+- Opening hours visible + match schema
+- Location terms present naturally (Hamilton, etc.)
+Output:
+- Local SEO signal strength: STRONG / OK / WEAK
+- 3 highest-leverage upgrades (no fluff)
+
+────────────────────────────────────────
+9) REGRESSION TRAPS (WHAT BREAKS SEO LATER)
+────────────────────────────────────────
+Identify future failure points given Vercel + SSR:
+- accidental noindex in a future deploy
+- canonical becoming dynamic incorrectly
+- sitemap getting stale or including non-canonical URLs
+- blog added as subdomain instead of /blog
+- pdf indexing misconfigured
+Output:
+- “Regression watchlist” with 5 concrete checks to run after every deploy
+
+────────────────────────────────────────
+FINAL OUTPUT REQUIREMENTS
+────────────────────────────────────────
+- Provide a single “SEO Sanity Verdict” at top: READY / NEEDS FIXES
+- Use explicit PASS/FAIL language
+- Quote actual tags/headers where relevant
+- Do NOT propose redundant redirects (Vercel primary domain already handles)
+- Do NOT invent site content or social links
+- Prioritize issues by impact: MUST / SHOULD / OPTIONAL
