@@ -79,8 +79,8 @@ const App: React.FC = () => {
                <div className="aspect-[3/4] w-full overflow-hidden border-2 border-black">
                  <picture>
                    <source 
-                     srcSet="/hero-400.webp 400w, /hero.webp 600w" 
-                     sizes="(max-width: 768px) 400px, 600px"
+                     srcSet="/hero-400.webp 400w, /hero-600.webp 600w, /hero-800.webp 800w, /hero-1200.webp 1200w" 
+                     sizes="(max-width: 768px) 100vw, 600px"
                      type="image/webp" 
                    />
                    <img 
