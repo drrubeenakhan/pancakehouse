@@ -86,6 +86,16 @@ The project is configured for Vercel deployment with:
   - Terser minification with console/debugger removal
   - Enhanced hero image colors in source file (saturation +25%, contrast boost) instead of CSS filters
   - Optimized hero images to exact display dimensions (400w mobile, 600w desktop)
+- **Dec 13, 2025**: SEO finalization and image optimization:
+  - Finalized domain: mapleleafpancakehouse.ca
+  - Added complete SEO meta tags (canonical, keywords, author, robots)
+  - Added Open Graph tags for Facebook/LinkedIn sharing
+  - Added Twitter Card meta tags
+  - Added Restaurant schema.org structured data with address/phone/hours
+  - Updated robots.txt and sitemap generator to new domain
+  - Optimized menu images: 9.4MB → 292KB (97% reduction)
+  - marauder-stack.jpg: 7.9MB → 43KB
+  - All menu images now under 50KB each
 
 ## Performance Features
 
