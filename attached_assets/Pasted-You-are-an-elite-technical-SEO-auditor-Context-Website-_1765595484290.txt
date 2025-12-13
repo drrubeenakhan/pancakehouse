@@ -1,0 +1,146 @@
+You are an elite technical SEO auditor.
+
+Context:
+- Website is deployed on Vercel
+- Lighthouse scores: 100 / 100 / 100 / 100
+- Domain canonicalization already configured correctly (single primary domain + 301 redirects)
+- SSR application
+- Goal: eliminate silent SEO leaks, harden canonical authority, and prepare for long-term ranking dominance
+
+TASKS (do ALL):
+
+────────────────────────────────────────────
+1. DOMAIN & CANONICAL VERIFICATION
+────────────────────────────────────────────
+• Crawl the site and confirm:
+  - Exactly ONE canonical per page
+  - Canonical URLs match the primary domain (no www/non-www mismatch)
+  - No protocol mismatch (http vs https)
+  - No trailing-slash inconsistencies
+• Identify any pages where:
+  - Google might choose a different canonical
+  - Canonical points to redirected URLs
+• Output:
+  - A table: URL | Declared Canonical | Effective Canonical | Status
+
+────────────────────────────────────────────
+2. REDIRECT & STATUS CODE AUDIT
+────────────────────────────────────────────
+• Verify:
+  - All non-canonical domain variants return 301 (never 302/307)
+  - No redirect chains (max 1 hop)
+  - No redirect loops
+• Confirm:
+  - www → non-www (or vice versa) is consistent
+  - http → https enforced everywhere
+• Output:
+  - List of redirect paths with hop counts
+
+────────────────────────────────────────────
+3. INDEXATION CONTROL
+────────────────────────────────────────────
+• Inspect:
+  - robots.txt rules
+  - meta robots tags
+  - X-Robots-Tag headers
+• Ensure:
+  - No important pages are noindexed
+  - No accidental disallow rules
+• Identify:
+  - Pages that SHOULD be noindex (e.g. thank-you, auth, params)
+• Output:
+  - Indexable vs Non-Indexable page list with reasoning
+
+────────────────────────────────────────────
+4. SITEMAP INTEGRITY
+────────────────────────────────────────────
+• Validate sitemap.xml:
+  - Only canonical URLs
+  - No redirected URLs
+  - No 4xx/5xx
+  - Correct lastmod usage
+• Confirm:
+  - Sitemap aligns with crawlable pages
+• Output:
+  - Sitemap issues + corrected sitemap structure
+
+────────────────────────────────────────────
+5. DUPLICATE & NEAR-DUPLICATE CONTENT
+────────────────────────────────────────────
+• Detect:
+  - Same content across multiple URLs
+  - Parameterized duplicates
+  - Case-sensitive duplicates
+• Recommend:
+  - Canonical consolidation OR redirects
+• Output:
+  - Duplicate clusters with fix strategy
+
+────────────────────────────────────────────
+6. INTERNAL LINK EQUITY FLOW
+────────────────────────────────────────────
+• Analyze:
+  - Orphan pages
+  - Pages with excessive outbound links
+  - Pages with weak internal link signals
+• Verify:
+  - Homepage links to all money pages
+  - Blog posts funnel authority upward
+• Output:
+  - Internal link map + optimization recommendations
+
+────────────────────────────────────────────
+7. STRUCTURED DATA & SERP CONTROL
+────────────────────────────────────────────
+• Validate:
+  - JSON-LD correctness
+  - Organization / LocalBusiness / Breadcrumb / Article schemas
+• Check:
+  - Eligibility for rich results
+  - Missing required fields
+• Output:
+  - Schema errors, warnings, and enhancement suggestions
+
+────────────────────────────────────────────
+8. CONTENT QUALITY SIGNALS
+────────────────────────────────────────────
+• Evaluate:
+  - Title tag uniqueness
+  - Meta description uniqueness
+  - H1 usage (exactly one per page)
+• Detect:
+  - Keyword cannibalization
+  - Thin pages that dilute authority
+• Output:
+  - Page-level optimization recommendations
+
+────────────────────────────────────────────
+9. CRAWL BUDGET & RENDERING
+────────────────────────────────────────────
+• Confirm:
+  - SSR content fully available without JS
+  - No important content injected post-load
+• Identify:
+  - Crawl traps
+  - Infinite pagination risks
+• Output:
+  - Crawl efficiency report
+
+────────────────────────────────────────────
+10. SEO HARDENING CHECKLIST
+────────────────────────────────────────────
+Produce a FINAL checklist:
+- Must-fix (blocking issues)
+- Should-fix (ranking improvements)
+- Optional (future scaling)
+
+Rank issues by SEO impact.
+
+────────────────────────────────────────────
+OUTPUT FORMAT
+────────────────────────────────────────────
+• Clear sections
+• Tables where useful
+• No filler explanations
+• Assume reader is technical
+• Be brutally precise
