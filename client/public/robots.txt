@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mapleleafpancakehouse.ca/sitemap.xml
+Sitemap: https://www.mapleleafpancakehouse.ca/sitemap.xml
