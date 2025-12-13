@@ -272,6 +272,15 @@ const App: React.FC = () => {
           <p className="font-bold text-sm text-gray-400">
             © {new Date().getFullYear()} Maple Leaf Pancake House. Not affiliated with any cereal brands.
           </p>
+          <a 
+            href="https://www.instagram.com/mapleleafpancake/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-block mt-4 font-bold text-ph-yellow hover:text-white transition-colors"
+            aria-label="Follow Maple Leaf Pancake House on Instagram"
+          >
+            @mapleleafpancake on Instagram
+          </a>
           <p className="font-bold text-sm text-gray-400 mt-2">
             <a href="https://goldberg-web-design.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-ph-yellow transition-colors">
               Designed for Hungry Students by Goldberg
