@@ -96,6 +96,11 @@ The project is configured for Vercel deployment with:
   - Optimized menu images: 9.4MB → 292KB (97% reduction)
   - marauder-stack.jpg: 7.9MB → 43KB
   - All menu images now under 50KB each
+- **Dec 13, 2025**: Vercel Analytics integration:
+  - Added @vercel/speed-insights for Core Web Vitals monitoring (LCP, FID, CLS, FCP, TTFB)
+  - Added @vercel/analytics for page views, referrers, and visitor tracking
+  - Components added to both entry-client.tsx and entry-server.tsx for proper SSR hydration
+  - No API keys required - auto-detects Vercel environment on deployment
 
 ## Performance Features
 
